@@ -35,5 +35,13 @@ def run_tests():
 
 
 def powers(n):
+    if n%3//n:
+        print("Cube")
+    elif n%2//n:
+        print("Square")
+    elif n%2//n and n%3//n:
+        print("Square and Cube")
+    else:
+        print("Not a power")
 
 
