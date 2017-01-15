@@ -32,16 +32,22 @@ Tests:
 import doctest
 def run_tests():
     doctest.testmod(verbose=True, optionflags=doctest.NORMALIZE_WHITESPACE)
+    def powers(n):
+    
+    cubes = [1, 8, 27, 64]
+    squares = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
-
-def powers(n):
-    if n%3//n:
-        print("Cube")
-    elif n%2//n:
-        print("Square")
-    elif n%2//n and n%3//n:
+        if n in cubes and n in squares:
         print("Square and Cube")
-    else:
+
+        elif n in cubes:
+        print("Cube")
+
+        elif n in squares:
+        print("Square")
+
+        else:
         print("Not a power")
+
 
 
